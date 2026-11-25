@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0b">
+  <meta name="description" content="Le Mint, bar lounge à Remiremont. Retrouvez les horaires et quelques vues de l'intérieur de l'établissement.">
+  <meta property="og:title" content="Le Mint — Bar lounge · Remiremont">
+  <meta property="og:description" content="Informations pratiques et galerie du Mint à Remiremont.">
+  <meta property="og:type" content="website">
+  <title>Le Mint — Bar lounge · Remiremont</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script type="module" src="js/scene3d.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-copper" aria-hidden="true"></div>
+  <div class="ambient ambient-green" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="Le Mint, accueil">
+      <span class="brand-mark">M</span>
+      <span class="brand-name">LE MINT<small>BAR LOUNGE · REMIREMONT</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="#lieu">Le lieu</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#horaires">Horaires</a>
+      <a class="nav-cta" href="#infos">Informations <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content page-width">
+        <p class="eyebrow"><span class="eyebrow-line"></span> REMIREMONT · VOSGES</p>
+        <h1>LE<br><em>MINT</em><span class="hero-period">.</span></h1>
+        <p class="hero-category">BAR LOUNGE</p>
+        <div class="hero-rule"></div>
+        <p class="hero-intro">Marbre sombre, assises généreuses, nuances bronze et touches végétales : découvrez l'univers intérieur du Mint.</p>
+        <div class="hero-actions">
+          <a class="button button-copper" href="#horaires">Voir les horaires <span>↘</span></a>
+          <a class="button button-outline" href="#galerie">Explorer le lieu <span>↗</span></a>
+        </div>
+        <div class="hero-foot"><span>LE MINT</span><i></i><span>BAR LOUNGE · REMIREMONT</span></div>
+      </div>
+      <div class="hero-3d" aria-label="Objet décoratif abstrait en trois dimensions">
+        <canvas id="mint-scene" aria-hidden="true"></canvas>
+        <div class="hero-3d-fallback" aria-hidden="true"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-3d-caption"><span>ÉDITION</span><b>M.</b><span>LE MINT</span></div>
+      </div>
+      <a class="scroll-cue" href="#lieu"><span>DÉFILER</span><i></i></a>
+    </section>
+
+    <section class="intro section page-width" id="lieu">
+      <div class="section-label reveal"><span>01</span><i></i><span>LE LIEU</span></div>
+      <div class="intro-grid">
+        <div class="intro-heading reveal">
+          <p class="kicker">LE MINT · BAR LOUNGE</p>
+          <h2>Un décor<br><em>de caractère.</em></h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>Le Mint se distingue par une décoration aux lignes contemporaines : murs effet marbre noir, fauteuils aux tons gris, tables aux finitions bronze et éléments végétaux.</p>
+          <p>Cette page rassemble les informations pratiques communiquées et quelques vues de l'intérieur de l'établissement.</p>
+          <a class="text-link" href="#galerie">Parcourir les photos <span>↗</span></a>
+        </div>
+      </div>
+      <div class="materials reveal">
+        <span>MARBRE SOMBRE</span><b></b><span>TONS MINÉRAUX</span><b></b><span>ACCENTS BRONZE</span><b></b><span>VERT VÉGÉTAL</span>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="galerie">
+      <div class="page-width">
+        <div class="gallery-heading reveal">
+          <div>
+            <div class="section-label"><span>02</span><i></i><span>GALERIE</span></div>
+            <h2>Le lieu,<br><em>en images.</em></h2>
+          </div>
+          <p>Quelques vues de l'intérieur du Mint.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-card gallery-card-wide reveal" type="button" data-image="assets/mint-lounge-wide.webp" aria-label="Agrandir la photo de l'espace lounge">
+            <img src="assets/mint-lounge-wide.webp" alt="Vue générale de l'espace intérieur avec fauteuils, tables et décoration végétale" loading="lazy">
+            <span class="gallery-overlay"><span>01 / ESPACE INTÉRIEUR</span><b>+</b></span>
+          </button>
+          <button class="gallery-card gallery-card-tall reveal" type="button" data-image="assets/mint-lounge-seating.webp" aria-label="Agrandir la photo des fauteuils et des tables">
+            <img src="assets/mint-lounge-seating.webp" alt="Fauteuils gris et tables rondes dans l'espace intérieur" loading="lazy">
+            <span class="gallery-overlay"><span>02 / ASSISES & MATIÈRES</span><b>+</b></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hours section page-width" id="horaires">
+      <div class="hours-visual reveal" aria-hidden="true">
+        <div class="hours-orbit"></div><div class="hours-monogram">M<span>.</span></div>
+        <div class="hours-visual-note">LE MINT<br>REMIREMONT</div>
+      </div>
+      <div class="hours-content reveal">
+        <div class="section-label"><span>03</span><i></i><span>HORAIRES</span></div>
+        <p class="kicker">INFORMATIONS PRATIQUES</p>
+        <h2>Quand<br><em>venir ?</em></h2>
+        <p class="hours-intro">Horaires communiqués pour l'établissement.</p>
+        <div class="hours-list" id="hours-list">
+          <div class="hours-row" data-day="1"><span>Lundi</span><time>20:00 — 01:00</time></div>
+          <div class="hours-row" data-day="2"><span>Mardi</span><time>17:00 — 01:00</time></div>
+          <div class="hours-row" data-day="3"><span>Mercredi</span><time>17:00 — 01:00</time></div>
+          <div class="hours-row" data-day="4"><span>Jeudi</span><time>17:00 — 01:00</time></div>
+          <div class="hours-row" data-day="5"><span>Vendredi</span><time>17:00 — 02:00</time></div>
+          <div class="hours-row" data-day="6"><span>Samedi</span><time>15:00 — 02:00</time></div>
+          <div class="hours-row" data-day="0"><span>Dimanche</span><time>15:00 — 01:00</time></div>
+        </div>
+        <p class="today-status" id="today-status" aria-live="polite"></p>
+        <button class="text-link copy-hours" id="copy-hours" type="button">Copier les horaires <span>⧉</span></button>
+        <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="info-section section page-width" id="infos">
+      <div class="info-heading reveal">
+        <div class="section-label"><span>04</span><i></i><span>LE MINT</span></div>
+        <p class="kicker">REMIREMONT · VOSGES</p>
+        <h2>Informations<br><em>du lieu.</em></h2>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-card-top"><span>ÉTABLISSEMENT</span><span class="info-dot"></span></div>
+        <h3>Le Mint</h3>
+        <p>Bar lounge</p>
+        <div class="info-divider"></div>
+        <div class="info-detail"><span>VILLE</span><b>Remiremont, Vosges</b></div>
+        <div class="info-detail"><span>HORAIRES</span><a href="#horaires">Consulter la semaine <span>↗</span></a></div>
+        <p class="info-note">L'adresse précise, le téléphone et les liens de contact seront ajoutés après confirmation directe par l'établissement.</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-glow" aria-hidden="true"></div>
+      <div class="page-width closing-inner reveal">
+        <p class="kicker">LE MINT · REMIREMONT</p>
+        <h2>LE MINT<span>.</span></h2>
+        <p>Bar lounge</p>
+        <a class="button button-copper" href="#horaires">Consulter les horaires <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="page-width footer-main">
+      <a class="brand" href="#top"><span class="brand-mark">M</span><span class="brand-name">LE MINT<small>BAR LOUNGE · REMIREMONT</small></span></a>
+      <span class="footer-city">REMIREMONT · VOSGES</span>
+      <a class="back-top" href="#top">RETOUR EN HAUT ↑</a>
+    </div>
+    <div class="page-width footer-bottom"><span>© <span id="year"></span> LE MINT</span><span>INFORMATIONS PRATIQUES</span></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photographie agrandie" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Fermer l'image">×</button>
+    <img src="" alt="" id="lightbox-image">
+  </div>
+</body>
+</html>
